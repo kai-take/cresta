@@ -178,11 +178,11 @@ sp
 
 .hamburger::before {
   content: "MENU";
-  color: #FFFFFF;
-  font-size: 1rem;
   position: absolute;
   bottom: -0.1em;
   left: 2.7em;
+  color: #FFFFFF;
+  font-size: 1rem;
 }
 
 .hamburger.scroll span {
@@ -199,12 +199,11 @@ sp
   /* fixedでも良いかも */
   top: 0;
   right: 0;
+  z-index: 10;
   width: 36%;
   max-width: 520px;
   height: 100vh;
   background: rgba(35, 35, 35, 0.95);
-  opacity: 0.95;
-  z-index: 10;
 }
 
 /* jsでactiveクラスをbodyに付与、その子要素として以下を指定していく */
@@ -461,10 +460,10 @@ sp
 .about__wrapper .about__inner {
   position: relative;
   z-index: 5;
+  padding: 9% 0 9% 2%;
   background-image: url(../img/skyline-4582510_1920.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 9% 0 9% 2%;
 }
 
 .about__wrapper .about__box {
