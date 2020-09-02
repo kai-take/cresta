@@ -21,16 +21,18 @@ body.active {
   font-family: 'montserrat';
   font-weight: 800;
   letter-spacing: 2.17px;
+  color: #333333;
 }
 
 .text {
   font-size: 1.6rem;
+  color: #333333;
 }
 
 .btn {
   display: inline-block;
-  background: black;
-  color: white;
+  background: #000000;
+  color: #FFFFFF;
   padding: 13px 0;
   width: 160px;
   font-size: 1.2rem;
@@ -41,7 +43,6 @@ body.active {
 
 .about__inner, .works-culture__wrapper, .topics__wrapper, .contact__wrapper {
   width: 78%;
-  min-width: 670px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -122,11 +123,11 @@ sp
 }
 
 .logo > a > svg path {
-  fill: white;
+  fill: #FFFFFF;
 }
 
 .logo.scroll > a > svg path {
-  fill: black;
+  fill: #000000;
 }
 
 .hamburger {
@@ -141,7 +142,7 @@ sp
   width: 22px;
   min-width: 22px;
   height: 2px;
-  background: white;
+  background: #FFFFFF;
   -webkit-transition: -webkit-transform 0.7s;
   transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
@@ -177,7 +178,7 @@ sp
 
 .hamburger::before {
   content: "MENU";
-  color: white;
+  color: #FFFFFF;
   font-size: 1rem;
   position: absolute;
   bottom: -0.1em;
@@ -185,11 +186,11 @@ sp
 }
 
 .hamburger.scroll span {
-  background: black;
+  background: #000000;
 }
 
 .hamburger.scroll::before {
-  color: black;
+  color: #000000;
 }
 
 .header__nav {
@@ -244,8 +245,7 @@ sp
   z-index: -1;
   width: 100%;
   height: 100vh;
-  background: rgba(181, 177, 177, 0.5);
-  /* 透過させて後ろの画面が映るようにする */
+  background: rgba(34, 34, 34, 0.6);
 }
 
 .header__items {
@@ -253,8 +253,8 @@ sp
   text-align: center;
 }
 
-.header__item:first-child::before {
-  content: url(/img/nav-img.png);
+.header__items::before {
+  content: url(../img/nav-img.png);
   display: block;
   width: 100%;
 }
@@ -263,7 +263,7 @@ sp
   font-family: 'montserrat';
   font-size: 2rem;
   font-weight: 800;
-  letter-spacing: 1.36rem;
+  letter-spacing: 1.36px;
 }
 
 .header__item + .header__item {
@@ -275,7 +275,7 @@ sp
 }
 
 .header__item > a {
-  color: white;
+  color: #FFFFFF;
 }
 
 /*
@@ -357,7 +357,7 @@ sp
 .mainVisual-inner {
   position: relative;
   z-index: -1;
-  background-image: url(img/the-honest-company-uM-WXMr0YXc-unsplash.png);
+  background-image: url(../img/the-honest-company-uM-WXMr0YXc-unsplash.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0;
@@ -365,8 +365,18 @@ sp
   height: 86.4%;
 }
 
+.mainVisual-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.34);
+}
+
 .mainVisual__texts {
-  color: white;
+  color: #FFFFFF;
   position: absolute;
   top: 25%;
   left: calc(88% + -20px);
@@ -544,7 +554,7 @@ sp
 }
 
 .works {
-  width: 48%;
+  width: 46.3%;
 }
 
 .works .works__img {
@@ -557,7 +567,7 @@ sp
   width: 100%;
 }
 
-.works .works_text {
+.works .works__text {
   margin-top: 30px;
   font-family: '游ゴシック体';
   font-weight: 500;
@@ -568,7 +578,7 @@ sp
 }
 
 .culture {
-  width: 48%;
+  width: 46.3%;
 }
 
 .culture .culture__img {
@@ -581,7 +591,7 @@ sp
   width: 100%;
 }
 
-.culture .culture_text {
+.culture .culture__text {
   margin-top: 30px;
   font-family: '游ゴシック体';
   font-weight: 500;
@@ -663,12 +673,11 @@ sp
 
 .topics__wrapper .topics__news {
   margin-top: 32px;
-  padding-left: 44%;
-  min-width: 700px;
+  padding-left: 27.7vw;
 }
 
 .topics__wrapper .topics__item {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #DDDDDD;
   padding-bottom: 12px;
 }
 
@@ -681,6 +690,7 @@ sp
   font-family: 'montserrat';
   font-weight: 500;
   letter-spacing: 1.5px;
+  color: #CECECE;
 }
 
 .topics__wrapper .item__title {
@@ -689,6 +699,7 @@ sp
   font-family: '游ゴシック体';
   font-weight: 700;
   letter-spacing: 0.05px;
+  color: #333333;
 }
 
 .topics__wrapper .topics__btn {
@@ -697,19 +708,6 @@ sp
 
 .topics__wrapper .btn__wrapper {
   text-align: right;
-}
-
-/*
-表示崩れ防止
-———————————*/
-@media (max-width: 1024px) {
-  .topics__wrapper {
-    width: 92%;
-    padding: 40px 0;
-  }
-  .topics__wrapper .topics__news {
-    padding-left: 20%;
-  }
 }
 
 /*
@@ -784,7 +782,6 @@ sp
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 720px;
   padding: 60px 0 120px 0;
 }
 

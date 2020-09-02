@@ -21,14 +21,16 @@ body.active {
     font-family: 'montserrat';
     font-weight: 800;
     letter-spacing: 2.17px;
+    color: #333333;
 }
 .text {
     font-size: 1.6rem; // topicsだけサイズが違うから別で指定
+    color: #333333;
 }
 .btn {
     display: inline-block;
-    background: black;
-    color: white;
+    background: #000000;
+    color: #FFFFFF;
     padding: 13px 0;
     width: 160px;
     font-size: 1.2rem;
@@ -38,7 +40,6 @@ body.active {
 }
 .about__inner, .works-culture__wrapper,.topics__wrapper, .contact__wrapper {
     width: 78%;
-    min-width: 670px;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -108,10 +109,10 @@ sp
     width: 100%;
 }  
 .logo > a > svg path {
-    fill: white;
+    fill: #FFFFFF;
 }  
 .logo.scroll > a > svg path {
-    fill: black;
+    fill: #000000;
 }  
 .hamburger {
     position: relative;
@@ -124,7 +125,7 @@ sp
     width: 22px;
     min-width: 22px;
     height: 2px;
-    background: white;
+    background: #FFFFFF;
     transition: transform 0.7s;
 }
 .hamburger > span + span {
@@ -144,7 +145,7 @@ sp
 }
 .hamburger::before{
     content: "MENU";
-    color: white;
+    color: #FFFFFF;
     font-size: 1rem;
     position: absolute;
     // bottom: 1.6em;
@@ -152,10 +153,10 @@ sp
     left: 2.7em;
 }
 .hamburger.scroll span {
-    background: black;
+    background: #000000;
 }
 .hamburger.scroll::before {
-    color: black;
+    color: #000000;
 }
 .header__nav {
     display: none; 
@@ -194,14 +195,14 @@ sp
     z-index: -1; 
     width:100%;
     height:100vh;
-    background:rgba(181,177,177,0.5); /* 透過させて後ろの画面が映るようにする */
+    background: rgba(34, 34, 34,0.6);
 }
 .header__items {
     margin: 180px auto;
     text-align: center;
 }
-.header__item:first-child::before{
-    content: url(/img/nav-img.png);
+.header__items::before{
+    content: url(../img/nav-img.png);
     display: block;
     width: 100%;
 }
@@ -209,7 +210,7 @@ sp
     font-family: 'montserrat';
     font-size: 2rem;
     font-weight: 800;
-    letter-spacing: 1.36rem;
+    letter-spacing: 1.36px;
 }
 .header__item + .header__item {
     margin-top: 30px;
@@ -218,7 +219,7 @@ sp
     margin-top: 40px;
 }
 .header__item > a {
-    color: white;
+    color: #FFFFFF;
 }
 
 /*
@@ -298,7 +299,7 @@ sp
 .mainVisual-inner {
     position: relative;
     z-index: -1;
-    background-image: url(img/the-honest-company-uM-WXMr0YXc-unsplash.png);
+    background-image: url(../img/the-honest-company-uM-WXMr0YXc-unsplash.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 0;
@@ -306,8 +307,17 @@ sp
     height: 86.4%;
     // padding-bottom: 40%; 画像の引き延ばしはできない、ある一定の幅を超えると余白を生む
 }
+.mainVisual-inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.34);
+}
 .mainVisual__texts { 
-    color: white;
+    color: #FFFFFF;
     position: absolute;
     top: 25%;
     left: calc(88% + -20px); /* 幅が縮んでも余白を持つ */
@@ -477,7 +487,7 @@ sp
 }
 
 .works {
-    width: 48%;
+    width: 46.3%;
 
     .works__img {
         display: block;
@@ -487,7 +497,7 @@ sp
     .works__img > img {
         width: 100%;
     }
-    .works_text {
+    .works__text {
         margin-top: 30px;
         font-family: '游ゴシック体';
         font-weight: 500;
@@ -498,7 +508,7 @@ sp
 }
 
 .culture {
-    width: 48%;
+    width: 46.3%;
 
     .culture__img {
         display: block;
@@ -508,7 +518,7 @@ sp
     .culture__img > img {
         width: 100%;
     }
-    .culture_text {
+    .culture__text {
         margin-top: 30px;
         font-family: '游ゴシック体';
         font-weight: 500;
@@ -589,11 +599,10 @@ sp
 
     .topics__news {
         margin-top: 32px;
-        padding-left: 44%;
-        min-width: 700px;
+        padding-left: 27.7vw;
     }
     .topics__item {
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #DDDDDD;
         padding-bottom: 12px;
     }
     .topics__item + .topics__item {
@@ -604,6 +613,7 @@ sp
         font-family: 'montserrat';
         font-weight: 500;
         letter-spacing: 1.5px;
+        color: #CECECE;
     }
     .item__title {
         margin-top: 13px;
@@ -611,6 +621,7 @@ sp
         font-family: '游ゴシック体';
         font-weight: 700; // bold
         letter-spacing: 0.05px;
+        color: #333333;
     }
     .topics__btn {
         margin-top: 30px;
@@ -620,19 +631,6 @@ sp
     }
 }
 
-/*
-表示崩れ防止
-———————————*/
-@media (max-width:1024px) {
-    .topics__wrapper {
-        width: 92%;
-        padding: 40px 0;
-
-        .topics__news {
-            padding-left: 20%;
-        }
-    }
-}
 /*
 tablet
 ———————————*/
@@ -700,7 +698,6 @@ sp
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    min-width: 720px;
     padding: 60px 0 120px 0;
 
     .contact__card {
