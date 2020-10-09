@@ -157,6 +157,12 @@ sp
 .hamburger.scroll::before {
     color: #000000;
 }
+.hamburger.open span {
+    background: #000000;
+}
+.hamburger.open::before {
+    color: #000000;
+}
 .header__nav {
     display: none; 
     position: absolute; /* fixedでも良いかも */
