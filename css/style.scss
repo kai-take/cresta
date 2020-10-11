@@ -173,6 +173,7 @@ sp
     max-width: 520px;
     height: 100vh;
     background: rgba(35, 35, 35, 0.95);
+    overflow-y: scroll;
 }
 
 /* jsでactiveクラスをbodyに付与、その子要素として以下を指定していく */

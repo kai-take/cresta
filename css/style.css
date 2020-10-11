@@ -135,7 +135,6 @@ sp
   z-index: 11;
   padding-right: 30px;
   cursor: pointer;
-  margin-left: auto; /* IE対策 */
 }
 
 .hamburger > span {
@@ -178,7 +177,6 @@ sp
 }
 
 .hamburger::before {
-  display: block;
   content: "MENU";
   position: absolute;
   bottom: -0.1em;
@@ -214,6 +212,7 @@ sp
   max-width: 520px;
   height: 100vh;
   background: rgba(35, 35, 35, 0.95);
+  overflow-y: scroll;
 }
 
 /* jsでactiveクラスをbodyに付与、その子要素として以下を指定していく */
