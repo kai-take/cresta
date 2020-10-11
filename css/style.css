@@ -135,6 +135,7 @@ sp
   z-index: 11;
   padding-right: 30px;
   cursor: pointer;
+  margin-left: auto; /* IE対策 */
 }
 
 .hamburger > span {
