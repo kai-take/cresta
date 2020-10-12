@@ -2,8 +2,8 @@ $(function () { // 通常の記述はここに書いていく
     /*
     ハンバーガーメニュー 
     ———————————*/
-    $('.hamburger,.header__item > a,.overlay').on('click', function () {
-        $('body').toggleClass('active');
+    $('.hamburger, .header__item > a, .overlay').on('click', function () {
+        $('body, .header__nav, .hamburger').toggleClass('active');
 
         let imgHeight = $('.mainVisual').outerHeight();
         let scroll = $(window).scrollTop();
