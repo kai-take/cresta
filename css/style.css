@@ -221,7 +221,7 @@ sp
 }
 
 /* jsでactiveクラスをbodyに付与、その子要素として以下を指定していく */
-.active .header__nav {
+.active.header__nav {
   display: block;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
