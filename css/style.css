@@ -117,6 +117,11 @@ sp
   padding: 30px 58px;
 }
 
+.logo {
+  position: relative;
+  z-index: -1;
+}
+
 .logo > a {
   display: block;
   width: 100%;
@@ -262,15 +267,6 @@ sp
   background: rgba(34, 34, 34, 0.6);
 }
 
-.active.overlay {
-  display: block;
-}
-
-.header__items {
-  margin: 180px auto;
-  text-align: center;
-}
-
 .header__items::before {
   content: url(../img/nav-img.png);
   display: block;
@@ -294,6 +290,15 @@ sp
 
 .header__item > a {
   color: #FFFFFF;
+}
+
+.active.overlay {
+  display: block;
+}
+
+.header__items {
+  margin: 180px auto;
+  text-align: center;
 }
 
 /*
