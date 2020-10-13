@@ -3,7 +3,7 @@ $(function () { // 通常の記述はここに書いていく
     ハンバーガーメニュー 
     ———————————*/
     $('.hamburger,.header__item > a,.overlay').on('click', function () {
-        $('body').toggleClass('active');
+        $('body, .header__nav, .hamburger').toggleClass('active');
 
         let imgHeight = $('.mainVisual').outerHeight();
         let scroll = $(window).scrollTop();
@@ -11,6 +11,7 @@ $(function () { // 通常の記述はここに書いていく
         if ($('body').hasClass('active')) { // 開く時
             if (scroll > imgHeight - 50) {
                 $('.hamburger').removeClass('scroll'); // 開く時に黒かったら白にする
+                console.log("test");
             }
         } else { // 閉じる時
             if (scroll > imgHeight - 50) {
