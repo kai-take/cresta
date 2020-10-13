@@ -1,6 +1,9 @@
 // @import 'normalize'; //リセットcss//
 
 /* 初期設定 */
+body {
+    -ms-overflow-style: none;
+}
 #wrapper {
     position: relative;
     width: 100%;
