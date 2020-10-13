@@ -129,7 +129,7 @@ sp
     width: 22px;
     min-width: 22px;
     height: 2px;
-    background: #FFFFFF !important; 
+    background: #FFFFFF; 
     transition: transform 0.7s;
 }
 .hamburger > span + span {
@@ -152,14 +152,14 @@ sp
     position: absolute;
     bottom: -0.1em;
     left: 2.7em;
-    color: #FFFFFF !important;
+    color: #FFFFFF;
     font-size: 1rem;
 }
 .hamburger.scroll span {
-    background: #000000 !important; 
+    background: #000000; 
 }
 .hamburger.scroll::before {
-    color: #000000 !important;
+    color: #000000;
 }
 .hamburger.open span {
     background: #000000;
