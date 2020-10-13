@@ -8,7 +8,9 @@ $(function () { // 通常の記述はここに書いていく
         let imgHeight = $('.mainVisual').outerHeight();
         let scroll = $(window).scrollTop();
 
-        if ($('body').hasClass('active')) { // 開く時
+        if ($('body, .header__nav, .hamburger').hasClass('active')) { // 開く時
+            console.log("active");
+
             if (scroll > imgHeight - 50) {
                 $('.hamburger').removeClass('scroll'); // 開く時に黒かったら白にする
                 console.log("test");
