@@ -133,7 +133,7 @@ sp
 .hamburger {
   position: relative;
   z-index: 11;
-  margin-left: auto; /* IE対策 */
+  margin-left: auto;
   padding-right: 30px;
   cursor: pointer;
 }
@@ -154,7 +154,7 @@ sp
   margin-top: 2px;
 }
 
-.active.hamburger > span:nth-child(1) {
+.active .hamburger > span:nth-child(1) {
   -webkit-transition-delay: 70ms;
           transition-delay: 70ms;
   -webkit-transform: translateY(4px) rotate(150deg);
@@ -162,7 +162,7 @@ sp
   /* heightとmargin-bottomを足した値 */
 }
 
-.active.hamburger > span:nth-child(2) {
+.active .hamburger > span:nth-child(2) {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
   -webkit-transform: translateX(-18px) scaleX(0);
@@ -170,7 +170,7 @@ sp
   /* 横にずれて消える */
 }
 
-.active.hamburger > span:nth-child(3) {
+.active .hamburger > span:nth-child(3) {
   -webkit-transition-delay: 140ms;
           transition-delay: 140ms;
   -webkit-transform: translateY(-4px) rotate(-150deg);
@@ -217,7 +217,7 @@ sp
 }
 
 /* jsでactiveクラスをbodyに付与、その子要素として以下を指定していく */
-.active.header__nav {
+.active .header__nav {
   display: block;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
